@@ -1,0 +1,55 @@
+*{
+    cursor: none;
+}
+body{
+    background: url('./img/background.jpg') ;
+    backdrop-filter: blur(1.5px); 
+    background-size: cover;
+}
+.App{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    overflow: hidden;
+}
+.cont{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cursor{
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: rgba($color: #fff, $alpha: .75);
+    z-index: 9999;
+}
+
+.contSun{
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+.sun{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    background: #FFD335;
+    box-shadow: 0px 0px 49px 29px rgba(255, 211, 53, 0.84);
+
+}   
+@media screen and (max-width: 890px) {
+    .sun{
+    width: 35vh;
+    height: 35vh;
+} .contSun{
+    top: 20%;
+}
+}
+
+
+

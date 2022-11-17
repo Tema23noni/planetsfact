@@ -1,0 +1,190 @@
+.header{
+    background-color: #353856 ;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logoText{
+        transform: rotate(90deg);
+        font-size: 20px;
+        
+        position: absolute;
+        top: 30px;
+
+    }
+    .navigator{
+        display: flex;
+        box-sizing: border-box;
+        width: 70px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        li{
+            margin: 2vh;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            transition: 200ms ease-in-out ;
+        }
+        li:hover{
+            transform: scale(2)
+        }
+        img{
+            @apply bg-cover w-full h-full;
+        }        
+    };
+
+}
+@media screen and (max-width:890px) and (min-width: 751px) {
+    .header{
+    background-color: #353856 ;
+    position: fixed;
+    bottom: 0;
+
+    height: 110px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logoText{
+       display: none;  
+
+    }
+    .navigator{
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        li{
+            margin: 0 1rem;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            width: 52px;
+            height: 52px;
+            transition: 200ms ease-in-out ;
+        }
+        li:hover{
+            transform: scale(2);
+            margin: 10px 0
+        }
+        img{
+            @apply bg-cover w-full h-full;
+        }        
+    };
+
+}
+}
+@media screen and (max-width: 750px) {
+    .header{
+        background-color: rgba($color: #353856, $alpha: .8) ;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        justify-content: center;  
+        z-index: 9;  
+    }
+    .menu.active{
+        transform: translateX(0);
+    }
+    .menu{
+        transform: translateX(200%);
+        position: fixed;
+        width: 100vw;
+        top: 0px;
+        right: 0;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .blur{
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(2px);
+            position: absolute;
+        }
+        .menu__cont{
+            position: fixed;
+            right: 0;
+            width: 20%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 1);
+            .bergerPlanets{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 1 1 auto;
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        @apply bg-contain w-12 h-12 m-0 p-0;
+                    }
+                    p{
+                        @apply mx-5 text-black text-lg
+                    }
+                }
+
+                
+            }
+    }
+    }
+    .burger__cont{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .burgerBtn{
+            
+            width: 30px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            span {
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                
+            }
+            ::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 4px;
+                width: 20px;
+                height: 3px;
+                background-color: #fff;
+            }
+            ::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 4px;
+                width: 20px;
+                height: 3px;
+                background-color: #fff;
+            }
+        }
+}
+}

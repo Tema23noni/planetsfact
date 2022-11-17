@@ -1,0 +1,123 @@
+.cont{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.planCont{
+    width: 30%;
+    height: -30%;
+}
+.planet{top: 50%;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    @apply w-full;
+}
+.planetFact{
+    border: 2px solid rgba($color: rgb(102, 102, 102), $alpha: 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color: #fff, $alpha: 0.3);
+    .namePlanet{
+        @apply text-3xl text-center
+    }
+    .charact{
+        @apply my-3
+    }
+    .charact>p{
+        @apply text-lg py-1 
+    }
+    .modalBtn{
+        border: 1px solid #fff;
+        @apply rounded-lg p-3 uppercase hover:bg-slate-50 cursor-none hover:text-stone-800
+    }
+}
+
+@media screen and (max-width:890px) and (min-width: 751px){
+    .cont{
+        height: 100%;
+        width: 100vw;
+        
+    display: flex;
+    flex-direction: column;
+       
+}
+.planetFact{
+    border: 2px solid rgba($color: rgb(102, 102, 102), $alpha: 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 5;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color: #fff, $alpha: 0.4);
+    .namePlanet{
+        @apply  text-center
+    }
+    .charact{
+        @apply my-0
+    }
+    .charact>p{
+        font-size: 16px;
+        @apply  py-2;
+    }
+    .modalBtn{
+        border: 1px solid #fff;
+        @apply rounded-full p-2 uppercase bg-slate-50 cursor-none text-lg text-stone-900
+    }
+}
+}
+@media screen and (max-width: 750px){
+    .cont{
+        height: 100%;
+        width: 100vw;
+        
+    display: flex;
+    flex-direction: column;
+       
+}
+.planCont{
+    width: 60%;
+    height: 40%;
+    
+}
+.planet{top: 50%;
+    margin: 0;
+    left: 30%;
+    transform: translate(-50%,-50%);
+
+    @apply w-full
+}
+.planetFact{
+    border: 2px solid rgba($color: rgb(102, 102, 102), $alpha: 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 5;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color: #fff, $alpha: 0.4);
+    .namePlanet{
+        @apply  text-center
+    }
+    .charact{
+        @apply my-0
+    }
+    .charact>p{
+        font-size: 16px;
+        @apply  py-2;
+    }
+    .modalBtn{
+        border: 1px solid #fff;
+        @apply rounded-full p-2 uppercase bg-slate-50 cursor-none text-base text-stone-900
+    }
+}
+}
+ 
