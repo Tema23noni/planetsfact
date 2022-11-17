@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/planetsfact/static/css/main.151b50c3.css",
+    "main.js": "/planetsfact/static/js/main.54d4ffb0.js",
+    "static/media/background.jpg": "/planetsfact/static/media/background.6646da4822912fbed32b.jpg",
+    "static/media/mercu.png": "/planetsfact/static/media/mercu.45d73c31d23baf72da3a.png",
+    "static/media/earth.png": "/planetsfact/static/media/earth.7fbd9342a5670d40600e.png",
+    "static/media/upiter.png": "/planetsfact/static/media/upiter.5427be955ca5a99b7081.png",
+    "static/media/mars.png": "/planetsfact/static/media/mars.0c12fa969138b2bf002a.png",
+    "static/media/uran.png": "/planetsfact/static/media/uran.929f18d3a5d407540940.png",
+    "static/media/venus.png": "/planetsfact/static/media/venus.3e90a14c8269f1a4ab31.png",
+    "static/media/neptune.png": "/planetsfact/static/media/neptune.137ad5374e9d9f8f1771.png",
+    "static/media/saturn.png": "/planetsfact/static/media/saturn.bd29ed377d501c57c7eb.png",
+    "index.html": "/planetsfact/index.html",
+    "main.151b50c3.css.map": "/planetsfact/static/css/main.151b50c3.css.map",
+    "main.54d4ffb0.js.map": "/planetsfact/static/js/main.54d4ffb0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.151b50c3.css",
+    "static/js/main.54d4ffb0.js"
+  ]
+}
